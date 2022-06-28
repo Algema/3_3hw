@@ -19,4 +19,15 @@ public class  Transport implements CheckingTheWheels {
     public void updateTyre() {
         System.out.println("Меняем покрышку");
     }
+    @Override
+    public void check (){
+
+            System.out.println("Обслуживаем " + this.modelName);
+            for (int i = 0; i < this.wheelsCount; i++) {
+                this.updateTyre();
+            }
+
 }
+}
+
+
